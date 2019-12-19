@@ -20,6 +20,11 @@ El sistema esta dividido en varias capas:
 3. MardomExamen.Repository - En esta libreria se encuentran todas las funciones de acceso a datos. En este proyecto se implementan Interfaces.
 4. MardomExamen.Services - En esta libreria se encuentran toda la logica de negocio del sistema. En este proyecto se implementan Interfaces.
 
+La base de datos esta ubicada en: MardomExamen > APP_DATA
+En esta ruta se encuentran dos archivos:
+1. Archivo .sql que contiene los scripts para crear la base de datos, las tablas y vistas
+2. Archivo .bak que se puede montar en SQL Server y para restaurar la base de datos.
+
 
 ## Built With
 1. Microsoft Visual C#
