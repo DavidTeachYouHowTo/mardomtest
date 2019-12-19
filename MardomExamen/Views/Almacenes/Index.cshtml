@@ -1,0 +1,44 @@
+﻿@model IEnumerable<MardomExamen.Domain.Entities.Almacenes>
+
+@{
+    ViewBag.Title = "Listado de almacenes";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    <a class="btn btn-info" href="/Almacenes/Create">Nuevo almacén</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Almacen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ubicacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Capacidad)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Almacen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ubicacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capacidad)
+            </td>
+            <td>
+                <a class="btn btn-info" href="/Almacenes/Edit/@item.ID">Editar</a>
+            </td>
+        </tr>
+    }
+
+</table>
